@@ -106,26 +106,27 @@
             clearInterval(stopwatchInterval);
         }
 
-        function getDataFromGoogleSheets() {
-            // Load the Google Sheets API
-            gapi.load('client', initClient);
+        // function getDataFromGoogleSheets() {
+        //     // Load the Google Sheets API
+        //     gapi.load('client', initClient);
 
-            function initClient() {
-                gapi.client.init({
-                    apiKey: 'YOUR_API_KEY',
-                    clientId: 'YOUR_CLIENT_ID',
-                    discoveryDocs: [""],
-                }).then(function () {
-                    // Fetch data from Google Sheets
-                    gapi.client.sheets.spreadsheets.values.get({
-                        spreadsheetId: 'YOUR_SPREADSHEET_ID',
-                        range: 'Sheet1!A2:A2', // Change the range accordingly
-                    }).then(function (response) {
-                        var orderID = response.result.values[0][0];
-                        document.getElementById('order-id').innerText = 'Order ID: ' + orderID;
-                    }, function (reason) {
-                        console.error('Error: ' + reason.result.error.message);
-                    });
-                });
-            }
-        }
+        //     function initClient() {
+        //         gapi.client.init({
+        //             apiKey: 'YOUR_API_KEY',
+        //             clientId: 'YOUR_CLIENT_ID',
+        //             discoveryDocs: [""],
+        //         }).then(function () {
+        //             // Fetch data from Google Sheets
+        //             gapi.client.sheets.spreadsheets.values.get({
+        //                 spreadsheetId: 'YOUR_SPREADSHEET_ID',
+        //                 range: 'Sheet1!A2:A2', // Change the range accordingly
+        //             }).then(function (response) {
+        //                 var orderID = response.result.values[0][0];
+        //                 document.getElementById('order-id').innerText = 'Order ID: ' + orderID;
+        //             }, function (reason) {
+        //                 console.error('Error: ' + reason.result.error.message);
+        //             });
+        //         });
+        //     }
+        // }
+        //gay
