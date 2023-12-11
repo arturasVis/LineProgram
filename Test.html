@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XUM Assembly Line</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+
+
+
+    <div id="home-screen">
+        <h1>XUM Assembly Line</h1>
+        <button onclick="showStep(1)">Step 1</button>
+        <button onclick="showStep(2)">Step 2</button>
+        <button onclick="showStep(3)">Step 3</button>
+        <button onclick="showStep(4)">Step 4</button>
+    </div>
+
+    <div id="step-screen">
+        <!-- Content for each step goes here -->
+        <div class="header">
+            <h1 id="step-title">Step Content</h1>
+        </div>
+        <div class="content">
+            <div id="stopwatch-container">
+                <div class="elapsed-time" id="elapsed-time"></div>
+            </div>
+            <p id="part-i" onclick="toggleHighlight('part-i')">Part i</p>
+            <p id="part-ii" onclick="toggleHighlight('part-ii')">Part ii</p>
+            <p id="part-iii" onclick="toggleHighlight('part-iii')">Part iii</p>
+            <p id="part-iv" onclick="toggleHighlight('part-iv')">Part iv</p>
+            <p id="part-v" onclick="toggleHighlight('part-v')">Part v</p>
+            <p id="part-finished">Finished</p>
+            <div id="order-id">Order ID: Loading...</div>
+        </div>
+        <button onclick="showHome()">Home</button>
+    </div>
+</body>
+</html>

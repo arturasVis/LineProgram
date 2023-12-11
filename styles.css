@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#home-screen {
+    display: block;
+}
+
+#step-screen {
+    display: none;
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#back-to-home-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.elapsed-time {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.elapsed-time.red {
+    color: red;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    50% {
+        color: black;
+    }
+}
+
+#step-screen .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#step-screen .header {
+    margin-bottom: 20px;
+}
+
+#stopwatch-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#part-i,
+#part-ii,
+#part-iii,
+#part-iv,
+#part-v,
+#part-finished {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px;
+    text-align: right;
+}
+
+#part-finished {
+    visibility: hidden;
+}
+
+#order-id {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: left;
+}
